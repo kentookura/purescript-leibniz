@@ -1,4 +1,6 @@
 .psci*
+.purs-repl
+.spago/
 bower_components/
 output/
 .psc-package

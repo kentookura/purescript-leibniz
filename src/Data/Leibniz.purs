@@ -146,8 +146,8 @@ lowerLeibniz3of3 _ = Leibniz unsafeCoerce
 -- | respectively.
 class Distinguish a b c o | a b c -> o
 
-instance distinguishLeft :: Distinguish a b a Unit else
-instance distinguishRight :: Distinguish a b b Void
+instance distinguishLeft :: Distinguish a b a Unit
+else instance distinguishRight :: Distinguish a b b Void
 
 -- | A type for which `Distinguished a b c` is isomorphic to the unique output
 -- | `o` of the `Distinguish` relation such that `Distinguish a b c o` holds.
